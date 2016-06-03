@@ -1,0 +1,138 @@
+{
+	"default_lang" : "en-gb",
+
+	"email" : {
+		"subject" : {
+			"en-gb" : "{$1} is contacting you about {$2}.",
+			"en-us" : "{$1} is reaching out about {$2}.",
+			"es"    : "{$1} que está en contacto con sobre {$2} ."
+		},
+		"intro" : {
+			"en-gb" : "Hello, my name's {$1}. I want to talk to you about {$2}.",
+			"en-us" : "Hey, my name's {$1}. I want to talk to you about {$2}.",
+			"es"    : "Hola, mi nombre es {$1}. Quiero hablar con usted acerca de {$2}."
+		},
+		"error" : {
+			"en-gb" : "Oh my! Your details failed to send: {$1}",
+			"en-us" : "Doh! Your details failed to send: {$1}",
+			"es"    : "Sus datos no pudieron enviar: {$1}"
+		},
+		"sign_off" : {
+			"en-gb" : "Kind Regards,",
+			"en-us" : "Yours,",
+			"es"    : "Un Cordial Saludo,"
+		},
+		"confirmation" : {
+			"subject" : {
+				"en-gb" : "Thanks for your details",
+				"en-us" : "Thanks for your details",
+				"es"    : "Gracias por tus datos"
+			},
+			"body" : {
+				"en-gb" : "Your details have been receieved and we'll get back to you soon!",
+				"en-us" : "Your details have been receieved and we'll get back to you soon",
+				"es"    : "Sus datos han sido recibidos y nos pondremos en contacto con usted pronto"
+			}
+		}
+	},
+	"form" : {
+		"success" : {
+			"title" : {
+				"en-gb" : "Spiffing! Your details were successfully sent! We'll get back to you soon.",
+				"en-us" : "Sweet! Your details were successfully sent! We'll get back to you soon.",
+				"es"    : "Si! Sus datos han sido enviadas! Nos pondremos en contacto con usted pronto."
+			},
+			"button_text" : {
+				"en-gb" : "Thanks!",
+				"en-us" : "Thanks!",
+				"es"    : "Gracias"
+			}
+		},
+		"error" : {
+			"title" : {
+				"en-gb" : "Hang on! Something went wrong!",
+				"en-us" : "Woah! Something went wrong!",
+				"es"    : "Algo salió mal!"
+			},
+			"required" : {
+				"en-gb" : "We need your {$1}.",
+				"en-us" : "We need your {$1}.",
+				"es"    : "Necesitamos su {$1}."
+			},
+			"email" : {
+				"en-gb" : "Your email address is invalid.",
+				"en-us" : "Your email address is invalid.",
+				"es"    : "Tu dirección de correo electrónico no es válida."
+			},
+			"numeric" : {
+				"en-gb" : "Your {$1} should only contain numbers",
+				"en-us" : "Your {$1} should only contain numbers",
+				"es"    : "Su {$1} sólo debe contener números"
+			},
+			"honeypot" : {
+				"en-gb" : "Please leave the last field empty, we're using it to stop robots using the form.",
+				"en-us" : "Please leave the last field empty, we're using it to stop robots using the form.",
+				"es"    : "Por favor, deje el último campo vacío, lo estamos utilizando para detener los robots usando el formulario."
+			},
+			"file" : {
+				"size" : {
+					"en-gb" : "Your file(s) exceed the {$1}mb limit, please consider using a cloud based service like <a href=\"https://www.wetransfer.com/\">wetransfer</a>.",
+					"en-us" : "Your file(s) exceed the {$1}mb limit, please consider using a cloud based service like <a href=\"https://www.wetransfer.com/\">wetransfer</a>.",
+					"es"    : "Su archivo (s) excede el límite {$1}mb, por favor considere el uso de un servicio basado en la nube como <a href=\"https://www.wetransfer.com/\"> wetransfer </a>."
+				},
+				"exists" : {
+					"en-gb" : "The file {$1} already exists, please rename your file and try again.",
+					"en-us" : "The file {$1} already exists, please rename your file and try again.",
+					"es"    : "El archivo {$1} ya existe, por favor, cambie el nombre del archivo y vuelva a intentarlo."
+				},
+				"type" : {
+					"en-gb" : "We don't allow the file type for {$1}.",
+					"en-us" : "We don't allow the file type for {$1}.",
+					"es"    : "No permitimos que el tipo de archivo para {$1}."
+				},
+				"failed" : {
+					"en-gb" : "The file upload failed for {$1}.",
+					"en-us" : "The file upload failed for {$1}.",
+					"es"    : "La carga de archivos no para"
+				},
+				"server_limit" : {
+					"en-gb" : "You've tried uploading a file bigger than your hosting provider has allowed in the php.ini file - please contact your hosting provider to confirm.",
+					"en-us" : "You've tried uploading a file bigger than your hosting provider has allowed in the php.ini file - please contact your hosting provider to confirm.",
+					"es"    : "Usted ha intentado cargar un archivo más grande que su proveedor de hosting ha permitido en el archivo php.ini - por favor póngase en contacto con su proveedor de hosting para confirmar."
+				},
+				"general" : {
+					"en-gb" : "There was an error with the file {$1}: {$2}",
+					"en-us" : "There was an error with the file {$1}: {$2}",
+					"es"    : "Hubo un error con el archivo"
+				}
+			},
+			"captcha" : {
+				"empty" : {
+					"en-gb" : "Please complete the CAPTCHA",
+					"en-us" : "Please complete the CAPTCHA",
+					"es"    : "Por favor completar el CAPTCHA"
+				},
+				"bot" : {
+					"en-gb" : "You're Nicked Son! reCAPTCHA think's you're a bot: {$1}",
+					"en-us" : "FREEZE SUCKER! reCAPTCHA thinks you're a bot: {$1}",
+					"es"    : "usted es un robot!: {$1}"
+				}
+			},
+			"back_link" : {
+				"en-gb" : "Go <a href=\"javascript:history.back()\">back a page</a> to correct it.",
+				"en-us" : "Go <a href=\"javascript:history.back()\">back a page</a> to fix it.",
+				"es"    : "Ir <a href=\"javascript:history.back()\"> atrás una página </a> para corregirlo."
+			}
+		},
+		"button_text" : {
+			"en-gb" : "Sending...",
+			"en-us" : "Sending...",
+			"es"    : "Envío..."
+		},
+		"reset" : {
+			"en-gb" : "Reset",
+			"en-us" : "Reset",
+			"es"    : "Reiniciar"
+		}
+	}
+}

@@ -1,0 +1,19 @@
+{
+    "name": "ipedis/mobile-site",
+    "description": "Ipedis Mobile Website",
+    "require": {
+        "phpmailer/phpmailer": "~5.2"
+    },
+    "autoload": {
+      "psr-4": {
+        "Ipedis\\": "Ipedis/"
+      }
+    },
+    "license": "BeerWear",
+    "authors": [
+        {
+            "name": "Yanis",
+            "email": "yghidouche@ipedis.com"
+        }
+    ]
+}

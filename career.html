@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
+<script src="ajax.js" type="text/javascript"> </script>
+
+
+</head>
+<body>
+<div id="contact_form">
+    <form name="contact" enctype="multipart/form-data" method="post" action="server/index.php">
+        <fieldset>
+            <label for="name" id="name_label">Name</label>
+            <input type="text" name="name" id="name" size="30" value="" class="text-input" />
+            <label class="error" for="name" id="name_error">This field is required.</label>
+
+            <label for="email" id="email_label">Email</label>
+            <input type="text" name="email" id="email" size="30" value="" class="text-input" />
+            <label class="error" for="email" id="email_error">This field is required.</label>
+
+            <label for="phone" id="phone_label">Return Phone</label>
+            <input type="text" name="phone" id="phone" size="30" value="" class="text-input" />
+            <label class="error" for="phone" id="phone_error">This field is required.</label>
+
+            <label for="resume" accesskey="F"></label>
+
+            <input class="field" type="file" name="resume" id="resume">
+           <label class="error" for="resume" id="resume_error">Upload a file</label>
+
+            <label for="sujet" id="sujet_label">Subject</label>
+            <input type="text" name="sujet" id="sujet" size="30" value="" class="text-input" />
+            <label class="error" for="sujet" id="sujet_error">This field is required.</label>
+
+            <label for="message" id="message_label">Message</label>
+            <input type="text"  name="message" id="message" size="30" value="" class="text-input" />
+            <!--<textarea  name="message" id="message"> </textarea>-->
+            <label class="error" for="message" id="message_error">This field is required.</label>
+
+            <br />
+            <input type="submit" name="submit" class="button" id="submit_btn" value="Send" />
+        </fieldset>
+    </form>
+</div>
+</body>
+</html>

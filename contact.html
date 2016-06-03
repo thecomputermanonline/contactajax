@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+    <title> AJAX  Form</title>
+
+    <!-- copy/paste start -->
+    <link rel="stylesheet" href="server/assets/styles/select2.css">
+    <link rel="stylesheet" href="server/assets/styles/contact.css">
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src="server/assets/js/select2.min.js"></script>
+    <script src="server/assets/js/contact.js"></script>
+    <!--<script src="https://www.google.com/recaptcha/api.js" async defer></script>-->
+    <!-- copy/paste end -->
+</head>
+<body>
+
+<div class="content">
+
+
+
+    <!-- copy/paste start -->
+    <form action="server/index.php" enctype="multipart/form-data" method="POST" name="contact" id="contact" class="ucf">
+        <div class="message"></div>
+        <fieldset>
+            <legend>Please provide your details below</legend>
+
+            <p class="field-wrapper">
+                <label for="name" accesskey="U">
+                    <span class="required">Your Name</span>
+                    <input class="field" type="text" name="name" id="name" size="30" required>
+                </label>
+            </p>
+
+            <p class="field-wrapper">
+                <label for="email" accesskey="E">
+                    <span class="required">Email</span>
+                    <input class="field" type="email" name="email" id="email" size="30" placeholder="you@youremail.com" required>
+                </label>
+            </p>
+
+            <p class="field-wrapper">
+                <label for="phone" accesskey="P">
+                    <span class="required">Phone</span>
+                    <input class="field" type="tel" name="phone" id="phone" size="30" required>
+                </label>
+            </p>
+
+            <p class="field-wrapper">
+                <label for="sujet" accesskey="S">
+                    <span class="required">Subject</span>
+                    <select class="field" name="sujet" id="sujet" required>
+                        <option value="">Select one</option>
+                        <option value="support">Support</option>
+                        <option value="sales">Sales</option>
+                        <option value="bugs">Report a bug</option>
+                    </select>
+                </label>
+            </p>
+
+            <p class="field-wrapper">
+                <label for="message" accesskey="M">
+                    <span class="required">Message</span>
+                    <textarea class="field" name="message" id="message" cols="40" rows="3" required></textarea>
+                </label>
+            </p>
+
+            <p class="field-wrapper">
+                <label for="photo1" accesskey="F">
+                    <span class="required">Upload a passport photo</span>
+                    <input class="field" type="file" name="photo1" id="photo1" required >
+                </label>
+            </p>
+            <p class="field-wrapper">
+                <label for="resume" accesskey="F">
+                    <span class="required">Upload a portrait photo</span>
+                    <input class="field" type="file" name="photo2" id="photo2" required >
+                </label>
+            </p>
+            <p class="field-wrapper">
+                <label for="resume" accesskey="F">
+                    <span class="required">Upload a Resume</span>
+                    <input class="field" type="file" name="resume" id="resume" required >
+                </label>
+            </p>
+
+            <!--&lt;!&ndash; Google reCAPTCHA &ndash;&gt;-->
+            <!--&lt;!&ndash; change YOUR_SITE_KEY with your google recaptcha key &ndash;&gt;-->
+            <!--&lt;!&ndash; https://developers.google.com/recaptcha/docs/start &ndash;&gt;-->
+            <!--<div class="g-recaptcha" data-sitekey="6LdYN_8SAAAAAPFA1x8ah3vjmYuI2ItcsV4jL6Dr" data-expired-callback="recaptchaCallback"></div>-->
+            <!--<noscript>-->
+                <!--<div style="width: 302px; height: 352px;margin-bottom:20px;margin-left:100px;">-->
+                    <!--<div style="width: 302px; height: 352px; position: relative;">-->
+                        <!--<div style="width: 302px; height: 352px; position: absolute;">-->
+                            <!--&lt;!&ndash; change YOUR_SITE_KEY with your google recaptcha key &ndash;&gt;-->
+                            <!--<iframe src="https://www.google.com/recaptcha/api/fallback?k=6LdYN_8SAAAAAPFA1x8ah3vjmYuI2ItcsV4jL6Dr" style="width: 302px; height:352px; border-style: none;">-->
+                            <!--</iframe>-->
+                        <!--</div>-->
+                        <!--<div style="width: 250px; height: 80px; position: absolute; border-style: none; bottom: 21px; left: 25px; margin: 0px; padding: 0px; right: 25px;">-->
+                            <!--<textarea id="g-recaptcha-response" name="g-recaptcha-response" class="g-recaptcha-response" style="width: 250px; height: 80px; border: 1px solid #c1c1c1; margin: 0px; padding: 0px; resize: none;"></textarea>-->
+                        <!--</div>-->
+                    <!--</div>-->
+                <!--</div>-->
+            <!--</noscript>-->
+
+            <!-- honeypot -->
+            <p class="field-wrapper hey-honey">
+                <label for="honey">
+                    Please leave this field empty - we're using it to stop robots submitting the form<br>
+                    <input class="field" type="text" name="honey" id="honey">
+                </label>
+            </p>
+
+            <button type="submit" class="button primary">Send details</button>
+
+        </fieldset>
+    </form>
+    <!-- copy/paste end -->
+</div>
+
+</body>
+</html>
